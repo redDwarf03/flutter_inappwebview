@@ -12,6 +12,7 @@ import WebKit
 public class InAppWebViewSettings: ISettings<InAppWebView> {
     
     var useShouldOverrideUrlLoading = false
+    var useOnCreateWindow = false
     var useOnLoadResource = false
     var useOnDownloadStart = false
     @available(*, deprecated, message: "Use InAppWebViewManager.clearAllCache instead.")

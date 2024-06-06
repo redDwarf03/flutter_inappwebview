@@ -2551,7 +2551,7 @@ public class InAppWebView: WKWebView, UIScrollViewDelegate, WKUIDelegate,
             callback?.defaultBehaviour(nil)
         }
         
-        if let channelDelegate = channelDelegate {
+        if let useOnCreateWindow = self.settings?.useOnCreateWindow, useOnCreateWindow, channelDelegate = channelDelegate {
             channelDelegate.onCreateWindow(createWindowAction: createWindowAction, callback: callback)
         } else {
             callback.defaultBehaviour(nil)

@@ -356,6 +356,10 @@ class IOSHeadlessInAppWebView extends PlatformHeadlessInAppWebView
         settings.useShouldOverrideUrlLoading == null) {
       settings.useShouldOverrideUrlLoading = true;
     }
+    if (params.onCreateWindow != null &&
+        settings.useOnCreateWindow == null) {
+      settings.useOnCreateWindow = true;
+    }
     if (params.onLoadResource != null && settings.useOnLoadResource == null) {
       settings.useOnLoadResource = true;
     }

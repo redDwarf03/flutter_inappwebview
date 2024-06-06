@@ -65,6 +65,19 @@ class InAppWebViewSettings_ {
   ])
   bool? useShouldOverrideUrlLoading;
 
+  ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onCreateWindow] event.
+  ///
+  ///If the [PlatformWebViewCreationParams.onCreateWindow] event is implemented and this value is `null`,
+  ///it will be automatically inferred as `true`, otherwise, the default value is `false`.
+  ///This logic will not be applied for [PlatformInAppBrowser], where you must set the value manually.
+  @SupportedPlatforms(platforms: [
+    AndroidPlatform(),
+    IOSPlatform(),
+    MacOSPlatform(),
+    WindowsPlatform()
+  ])
+  bool? useOnCreateWindow;
+
   ///Set to `true` to be able to listen at the [PlatformWebViewCreationParams.onLoadResource] event.
   ///
   ///If the [PlatformWebViewCreationParams.onLoadResource] event is implemented and this value is `null`,

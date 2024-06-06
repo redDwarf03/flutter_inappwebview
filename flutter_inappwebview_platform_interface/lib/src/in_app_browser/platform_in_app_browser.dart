@@ -703,6 +703,8 @@ abstract class PlatformInAppBrowserEvents {
   ///
   ///[createWindowAction] represents the request.
   ///
+  ///**NOTE**: In order to be able to listen this event, you need to set [InAppWebViewSettings.onCreateWindow] setting to `true`.
+  ///
   ///**NOTE**: to allow JavaScript to open windows, you need to set [InAppWebViewSettings.javaScriptCanOpenWindowsAutomatically] setting to `true`.
   ///
   ///**NOTE**: on Android you need to set [InAppWebViewSettings.supportMultipleWindows] setting to `true`.
