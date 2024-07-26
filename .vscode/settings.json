@@ -1,5 +1,6 @@
 {
     "cmake.configureOnOpen": false,
+    "dart.flutterSdkPath": "/Users/SSe/.asdf/installs/flutter/3.22.3-stable/",
     "files.associations": {
         "algorithm": "cpp",
         "any": "cpp",
